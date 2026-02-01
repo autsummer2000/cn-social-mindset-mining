@@ -1,0 +1,29 @@
+﻿# python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# env / secrets
+.env
+.env.*
+*.key
+*apikey*
+*APIKey*
+
+# editor
+.vscode/
+
+# outputs / runs
+output/
+construct_outputs/
+runs/
+logs/
+*.log
+
+# backup / temp
+*.bak*
+*.tmp
+
+# data / docs (optional)
+*.pdf
+*.pdf.txt
