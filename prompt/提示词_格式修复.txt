@@ -1,0 +1,7 @@
+你刚才的输出无法被解析或字段不全。请严格输出一个纯 JSON 对象，不要包含任何 Markdown、解释或多余文本。
+字段必须包含：construct_name, definition, emergence_period, group_attributes, discriminant_validity(含concept_a/concept_b/unique_explanatory_power), linguistic_indicators(含keywords/typical_expression_pattern), predictive_validity(含predictable_behaviors/consumption_preference)。
+
+错误信息：{error_msg}
+
+以下是你上一轮输出（仅供参考，请改正并只输出 JSON）：
+{prev_output}

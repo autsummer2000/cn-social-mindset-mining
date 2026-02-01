@@ -1,0 +1,23 @@
+﻿**任务**
+基于评审人的评估报告，对上一轮生成的构念进行修正。
+
+**输入数据**
+以下是评审人返回的JSON评估报告：
+{judge_output}
+
+**执行指令**
+* 仔细分析 `qualitative_critique` 中指出的逻辑漏洞。
+* 逐条执行 `revision_patch_list` 中的修改动作。请特别注意 `target_field`和 `acceptance_criteria`。
+* **严禁**忽略高优先级的修改要求。
+* **不得新增字段**，必须保持与生成器相同的JSON结构。
+
+
+**输出格式**
+仅输出一个**纯 JSON 对象**，不要包含任何 Markdown、解释说明或其他文本。JSON 外不能有任何字符。
+
+
+**约束**
+- 仅逐条执行 revision_patch_list；未列出的修改不得擅自添加。
+- target_field 仅可为 [definition, group_attributes, discriminant_validity, emergence_period]。
+- 若评审意见包含上述范围以外的内容（如机制/语言标记/外部预测），可忽略。
+
